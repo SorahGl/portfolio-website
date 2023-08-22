@@ -1,0 +1,214 @@
+* {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    background-color: rgb(67, 31, 67);
+    color: white;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    padding: 20px;
+}
+header h2 {
+    display: inline;
+    float: left;
+    background-color: rgb(67, 31, 67);
+    color: white;
+}
+header li {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    float: right;
+    text-decoration: underline;
+    background-color: rgb(67, 31, 67);
+    color: white;
+    margin: 8px;
+}
+header a {
+    background-color: rgb(67, 31, 67);
+    color: white;
+}
+body {
+    position: relative;
+    top: 98px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 750px auto auto 340px 187px;
+    grid-row-gap: 40px;
+    
+}
+.homesection {
+    grid-area: 1 / 1 / 2 / 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*max-height: 750px;*/
+    background-color: skyblue;
+    
+}
+.homesection i {
+    margin: 30px;
+    display: block;
+    background-color: skyblue;
+    color: rgb(67, 31, 67);
+}
+.homesection h1 {
+    display: block;
+    background-color: skyblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: rgb(67, 31, 67);
+}
+
+.aboutmesection {
+    grid-area: 2 /2 / 3 / 6;
+    background-color: #F9B029;
+    border-radius: 15px;
+    
+    
+}
+.aboutmesection h2 {
+    background-color: #F9B029;
+    padding-top: 40px;
+    color: rgb(67, 31, 67);
+}
+.aboutmecontent {
+    display: flex;
+    background-color: #F9B029;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.aboutmesection p {
+    color: rgb(67, 31, 67);
+    background-color: #F9B029;
+    
+}
+.aboutmesection img {
+    height: 280px;
+    width: auto;  
+    border-radius: 50%;
+    padding: 5px;
+    background-color:#F9B029;
+}
+
+.projectssection {
+    grid-area: 3 /1 / 4 / 7;
+    justify-items: center;
+    align-items: center;
+    
+    background-color: rgb(67, 31, 67);;
+    border-radius: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.projectssection h2 {
+    background-color: rgb(67, 31, 67);
+    color: white;
+    padding: 30px;
+}
+.projectssection img {
+    width: 400px;
+    height: auto;
+}
+.projectimage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(67, 31, 67);
+    row-gap: 30px;
+
+}
+button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(67, 31, 67);
+}
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: white;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  .styled:hover {
+    background-color: #F9B029;
+  }
+  
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+.skillssection {
+    grid-area: 4 /1 / 5 / 7;
+    justify-items: center;
+    align-items: center;
+    /*max-height: 300px;*/
+    background-color: skyblue;
+    border-radius: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.skillssection h2, .skillssection p, .skillssection i {
+    background-color: skyblue;
+    color: rgb(67, 31, 67);
+}
+.skillimage {
+    display: flex;
+    justify-content: space-around;
+    background-color: skyblue;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.contactsection {
+    grid-area: 5 /2 / 6 / 6;
+    background-color: #F9B029;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    /*max-height: 200px;*/
+}
+
+.contactsection h2, .contactsection p {
+    background-color: #F9B029;
+    color: rgb(67, 31, 67);
+}
+.contactsection p {
+    display: flex;
+    justify-content: center;
+}
+.contactsection h2 {
+    padding-top: 30px;
+}
+
+
+@media screen and (max-width: 550px){
+    .aboutmesection {
+        grid-area: 2 /1 / 3 / 7;
+    }
+    .projectssection, .skillssection, .contactsection{
+        margin: 0px;
+    }
+    .contactsection {
+        grid-column: 1 / 7;
+    }
+}
