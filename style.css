@@ -30,6 +30,7 @@ header li {
     background-color: hsl(183, 100%, 30%);
     color: white;
     margin: 8px;
+    font-weight: bold;
 }
 header a {
     background-color: hsl(183, 100%, 30%);
