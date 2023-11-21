@@ -37,15 +37,5 @@ function otherButtonEvents(button2) {
 
 buttonEvents(button);
 otherButtonEvents(button2);
-/*
-
-function changeKeyColor() {
-    event.target.style.backgroundColor = 'pink'
-  }
-
-  function keyEvents(note) {
-    note.addEventListener('mousedown', changeKeyColor)
-    note.addEventListener('mouseup', keyReturn)
-  }*/
 
   
