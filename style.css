@@ -7,6 +7,8 @@
     line-height: 25px;
 }
 
+/* HEADER SECTION */
+
 header {
     position: fixed;
     background-color: hsl(183, 100%, 30%);
@@ -24,7 +26,6 @@ header h2 {
 }
 header li {
     display: inline;
-    /*flex-direction: row-reverse;*/
     float: right;
     text-decoration: underline;
     background-color: hsl(183, 100%, 30%);
@@ -36,15 +37,20 @@ header a {
     background-color: hsl(183, 100%, 30%);
     color: white;
 }
+
+/* BODY DIMENSIONS */
+
 body {
     position: relative;
     top: 75px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 600px auto auto 340px 187px;
+    grid-template-rows: 600px auto auto 340px 217px;
     grid-row-gap: 40px;
-    
 }
+
+/* HOME SECTION */
+
 .homesection {
     grid-area: 1 / 1 / 2 / 7;
     display: flex;
@@ -71,13 +77,14 @@ body {
     line-height: 60px;
 }
 
+/* ABOUT ME SECTION */
+
 .aboutmesection {
     grid-area: 2 /2 / 3 / 6;
     background-color: hsl(143, 45%, 89%);
     border-radius: 15px;
-    
-    
 }
+
 .aboutmesection h2 {
     background-color: hsl(143, 45%, 89%);
     padding-top: 40px;
@@ -96,16 +103,21 @@ body {
 }
 .aboutmesection img {
     height: 280px;
-    width: auto;  
-    border-radius: 50%;
+    width: 290px;
     padding: 5px;
+    padding-bottom: 15px;
     background-color:hsl(143, 45%, 89%);
+    /*float: right;*/
+    
+    
 }
+
+/* PROJECTS SECTION */
 
 .projectssection {
     grid-area: 3 /1 / 4 / 7;
     justify-items: center;
-    align-items: center;
+    align-items: top;
     background-color: hsl(143, 45%, 89%);
     border-radius: 15px;
     margin-left: 40px;
@@ -116,13 +128,15 @@ body {
     background-color: hsl(143, 45%, 89%);
     padding: 30px;
 }
-.projectssection div {
-
-}
 
 .projectssection img{
-    width: 400px;
-    height: auto;
+    width: 350px;
+    height: 460px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 35px;
+    margin-right: 35px;
+    background-color: hsl(143, 45%, 89%);
 }
 .projectimage {
     display: flex;
@@ -131,7 +145,9 @@ body {
     justify-content: space-around;
     background-color: hsl(143, 45%, 89%);
     row-gap: 30px;
-
+}
+.projectimage a {
+    background-color: hsl(143, 45%, 89%);
 }
 button {
     margin-top: 30px;
@@ -163,6 +179,9 @@ button {
       inset 2px 2px 3px rgba(0, 0, 0, 0.6);
   }
   
+
+/* SKILLS SECTION */
+
 .skillssection {
     grid-area: 4 /1 / 5 / 7;
     justify-items: center;
@@ -178,6 +197,12 @@ button {
     background-color: hsl(143, 45%, 89%);
 }
 
+.skillssection i {
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
 .skillimage {
     display: flex;
     justify-content: space-around;
@@ -186,6 +211,9 @@ button {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+/* CONTACT SECTION */
+
 .contactsection {
     grid-area: 5 /2 / 6 / 6;
     background-color: hsl(202, 100%, 89%);
@@ -193,7 +221,8 @@ button {
     /*border-top-right-radius: 15px;*/
     /*max-height: 200px;*/
     position: relative;
-    bottom: 10px;
+    /*bottom: 30px;*/
+    margin-bottom: 30px;
 }
 
 .contactsection h2, .contactsection p {
@@ -208,8 +237,9 @@ button {
     padding-top: 30px;
 }
 
+/* RESPONSIVENESS */
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 915px){
     .aboutmesection {
         grid-area: 2 /1 / 3 / 7;
     }
@@ -218,5 +248,26 @@ button {
     }
     .contactsection {
         grid-column: 1 / 7;
+    } 
+    .projectssection img{
+        width: 300px;
+        height: 350px;
+    }
+    .homesection {
+        flex-direction: column;
+    }
+    .homesection h1 {
+        font-size: 3em;
+    }
+    nav ul {
+        display: none;
+    }
+}
+@media screen and (max-width: 1065px){
+    .aboutmecontent{
+        flex-direction: column;
+        align-items: center;
+        
+        
     }
 }
