@@ -33,9 +33,15 @@ header li {
     margin: 8px;
     font-weight: bold;
 }
+
 header a {
     background-color: hsl(183, 100%, 30%);
     color: white;
+}
+
+header a:hover {
+    text-decoration: underline hsl(183, 100%, 30%);
+    transition: text-decoration 300ms ease-in;
 }
 
 /* BODY DIMENSIONS */
@@ -106,10 +112,15 @@ body {
     width: 290px;
     padding: 5px;
     padding-bottom: 15px;
-    background-color:hsl(143, 45%, 89%);
-    /*float: right;*/
-    
-    
+    background-color:hsl(143, 45%, 89%); 
+}
+
+.aboutmesection a {
+    background-color: hsl(143, 45%, 89%);
+    font-weight: bold;
+}
+.aboutmesection a:hover {
+    text-decoration: none;
 }
 
 /* PROJECTS SECTION */
@@ -210,6 +221,7 @@ button {
     flex-wrap: wrap;
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 40px;
 }
 
 /* CONTACT SECTION */
@@ -238,7 +250,11 @@ button {
 }
 
 /* RESPONSIVENESS */
-
+@media screen and (max-width: 407px) {
+    .skillssection i {
+        font-size: xx-large;
+    }
+}
 @media screen and (max-width: 915px){
     .aboutmesection {
         grid-area: 2 /1 / 3 / 7;
@@ -261,6 +277,12 @@ button {
     }
     nav ul {
         display: none;
+    }
+    .skillssection i {
+        font-size: xxx-large;
+    }
+    .homesection i {
+        font-size: xxxx-large;
     }
 }
 @media screen and (max-width: 1065px){
