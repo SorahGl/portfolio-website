@@ -62,7 +62,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*max-height: 750px;*/
     background-color: hsl(202, 100%, 89%);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -143,10 +142,8 @@ body {
 .projectssection img{
     width: 350px;
     height: 460px;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: 35px;
-    margin-right: 35px;
+    /*margin-left: 35px;
+    margin-right: 35px;*/
     background-color: hsl(143, 45%, 89%);
 }
 .projectimage {
@@ -197,7 +194,6 @@ button {
     grid-area: 4 /1 / 5 / 7;
     justify-items: center;
     align-items: center;
-    /*max-height: 300px;*/
     background-color: hsl(143, 45%, 89%);
     border-radius: 15px;
     margin-left: 40px;
@@ -230,10 +226,7 @@ button {
     grid-area: 5 /2 / 6 / 6;
     background-color: hsl(202, 100%, 89%);
     border-radius: 15px;
-    /*border-top-right-radius: 15px;*/
-    /*max-height: 200px;*/
     position: relative;
-    /*bottom: 30px;*/
     margin-bottom: 30px;
 }
 
@@ -255,6 +248,8 @@ button {
         font-size: xx-large;
     }
 }
+
+
 @media screen and (max-width: 915px){
     .aboutmesection {
         grid-area: 2 /1 / 3 / 7;
@@ -266,7 +261,7 @@ button {
         grid-column: 1 / 7;
     } 
     .projectssection img{
-        width: 300px;
+        width: 250px;
         height: 350px;
     }
     .homesection {
@@ -278,9 +273,7 @@ button {
     nav ul {
         display: none;
     }
-    .skillssection i {
-        font-size: xxx-large;
-    }
+    
     .homesection i {
         font-size: xxxx-large;
     }
@@ -291,5 +284,11 @@ button {
         align-items: center;
         
         
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .skillssection i {
+        font-size: xxx-large;
     }
 }
