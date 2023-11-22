@@ -111,7 +111,7 @@ body {
     width: 290px;
     padding: 5px;
     padding-bottom: 15px;
-    background-color:hsl(143, 45%, 89%); 
+    background-color: transparent; 
 }
 
 .aboutmesection a {
@@ -126,8 +126,6 @@ body {
 
 .projectssection {
     grid-area: 3 /1 / 4 / 7;
-    justify-items: center;
-    align-items: top;
     background-color: hsl(143, 45%, 89%);
     border-radius: 15px;
     margin-left: 40px;
@@ -142,20 +140,19 @@ body {
 .projectssection img{
     width: 350px;
     height: 460px;
-    /*margin-left: 35px;
-    margin-right: 35px;*/
-    background-color: hsl(143, 45%, 89%);
+    margin-left: 35px;
+    margin-right: 35px;
 }
 .projectimage {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     background-color: hsl(143, 45%, 89%);
     row-gap: 30px;
 }
 .projectimage a {
-    background-color: hsl(143, 45%, 89%);
+    background-color: transparent;
 }
 button {
     margin-top: 30px;
@@ -246,6 +243,9 @@ button {
 @media screen and (max-width: 407px) {
     .skillssection i {
         font-size: xx-large;
+    }
+    .homesection i {
+        font-size: x-large;
     }
 }
 
