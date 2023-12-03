@@ -31,7 +31,7 @@
         <div class="aboutmesection" id="aboutmesection">
             <h2>About Me</h2>
             <div class="aboutmecontent">
-                <p>My name is Sorah Gleich. I am a front-end developer, certified by Codecademy.My name is Sorah Gleich. I am a front-end developer, certified by Codecademy..My name is Sorah Gleich. I am learning software development through Codecademys Full-Stack Engineer program.My name is Sorah Gleich. I am learning software development through Codecademys Full-Stack Engineer program.My name is Sorah Gleich. I am learning software development through Codecademys Full-Stack Engineer program.<br>My name is Sorah Gleich. View my <a href="./certificate.html" target="_blank">front-end engineering certificate</a>.</p>
+                <p>My name is Sorah Gleich. I am a front-end developer, certified by Codecademy.My name is Sorah Gleich. I am a front-end developer, certified by Codecademy..My name is Sorah Gleich. I am learning software development through Codecademys Full-Stack Engineer program.My name is Sorah Gleich. I am learning software development through Codecademys Full-Stack Engineer program.My name is Sorah Gleich. I am learning software development through Codecademys Full-Stack Engineer program.<br>My name is Sorah Gleich. View my <a href="./certificate.html">front-end engineering certificate</a>.</p>
                 <img src="./pictures/sorah.png" alt="Sorah Gleich">
             </div>
         </div>
@@ -40,19 +40,64 @@
             <h2 id="projectssection">Projects</h2>
             <div class="projectimage">
 
-                <a target="_blank" href="https://sorahgl.github.io/form-a-story/"><img src="./pictures/form-a-story.png" alt="html form"></a>
-                <a target="_blank" href="https://sorahgl.github.io/personal-chef-company/"><img src="./pictures/chef-website.png" alt="chef website project"></a>
-                <a target="_blank" href="https://sorahgl.github.io/design-system/"><img src="./pictures/web design system.png" alt="web design system project"></a>
-                <a target="_blank" href="https://sorahgl.github.io/wordle-game/"><img src="./pictures/gitbash.png" alt="learn gitbash project" id="gitbash" hidden></a>
-                <a target="_blank" href="https://sorahgl.github.io/wordle-game/"><img src="./pictures/wordle.png" alt="wordle game" id="wordle" hidden></a>
-                <a target="_blank" href="https://sorahgl.github.io/wordle-game/"><img src="./pictures/wine festival.png" alt="wine festival project" id="wine-festival" hidden></a>
+                <div class="project-div">
+                    <img src="./pictures/form-a-story.png" alt="form a story" id="form-a-story" class="project"></a>
+                    <div class="info" >
+                        <h3>Form a Story</h3>
+                        <p>This is an interactive project in which a story is formed based on the users inputs. <br><br>HTML, CSS, and JavaScript</p>
+                            <a target="_blank" href="https://sorahgl.github.io/form-a-story/"><button type="button" class="projectButton">View the project</button></a>
+                            <a target="_blank" href="https://github.com/SorahGl/form-a-story"><button type="button" class="projectButton">View the code</button></a>
+                    </div>
+                </div>
+                <div class="project-div">
+                    <img src="./pictures/chef-website.png" alt="personal chef company" id="personal-chef-company" class="project">
+                    <div class="info" >
+                        <h3>Chef Company</h3>
+                        <p>This project, a home page of a company, features responsive web sizing. <br><br> HTML and CSS</p>
+                        <a target="_blank" href="https://sorahgl.github.io/personal-chef-company/"><button type="button" class="projectButton">View the project</button></a>
+                        <a target="_blank" href="https://github.com/sorahGl/personal-chef-company/"><button type="button" class="projectButton">View the code</button></a>
+                    </div>
+                </div>
+                <div class="project-div">
+                    <img src="./pictures/web design system.png" alt="web design system project" class="project">
+                    <div class="info" >
+                        <h3>Design System</h3>
+                        <p>This is a design system is an outline that can be used when creating a webpage. <br><br> HTML and CSS</p>
+                        <a target="_blank" href="https://sorahgl.github.io/design-system/"><button type="button" class="projectButton">View the project</button></a>
+                        <a target="_blank" href="https://github.com/sorahGl/design-system/"><button type="button" class="projectButton">View the code</button></a>
+                    </div>
+                </div>
+                <div class="project-div">
+                    <img src="./pictures/gitbash.png" alt="gitbash" id="gitbash" class="project" hidden>
+                    <div class="info" >
+                        <h3>Git Practice</h3>
+                        <p>This project of ASCII images was to practice git commands. <br><br>Git and Version Control</p>
+                    </div>
+                </div>
+                <div class="project-div">
+                    <img src="./pictures/wordle.png" alt="wordle game" id="wordle" class="project" hidden>
+                    <div class="info" >
+                        <h3>Wordle Game</h3>
+                        <p>This fully functional game is a take on the New York Times wordle game and incorporated AJAX. <br><br> HTML, CSS, and JavaScript</p>
+                        <a target="_blank" href="https://sorahgl.github.io/wordle-game/"><button type="button" class="projectButton">View the project</button></a>
+                        <a target="_blank" href="https://github.com/sorahGl/wordle-game/"><button type="button" class="projectButton">View the code</button></a>
+                    </div>
+                </div>
+                <div class="project-div">
+                    <img src="./pictures/portfolio.png" alt="wine festival" id="wine-festival" class="project" hidden>
+                    <div class="info" >
+                        <h3>Portfolio Projects Website</h3>
+                        <p>This website, the one you're on now, I created in order hold all my portfolio projects. <br><br>HTML, CSS, and JavaScript</p>
+                        <a target="_blank" href="https://github.com/sorahGl/portfolio-website/"><button type="button" class="projectButton">View the code</button></a>
+                    </div>
+                </div>
             </div>
             <button class="styled" type="button" id="button1">See More Projects</button>
         </div>
 
         <div class="skillssection" id="skillssection">
             <h2>My Skills</h2>
-            <p>The following are skills that I have learned: <br>  HTML, CSS, JavaScript, Node.js, React, Redux, SQL, Python, Git, and Github.</p>
+            <p>The following are skills that I have learned: <br>  HTML, CSS, JavaScript, Node.js, React, Redux, SQL, Python, Git, Github, data structures, and algorithms.</p>
             <div class="skillimage">
                 <i class="fa-brands fa-html5 fa-6x"></i>
                 <i class="fa-brands fa-css3-alt fa-6x"></i>

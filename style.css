@@ -15,7 +15,7 @@ header {
     color: white;
     width: 100%;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     padding: 10px;
 }
 header h2 {
@@ -123,7 +123,6 @@ body {
 }
 
 /* PROJECTS SECTION */
-
 .projectssection {
     grid-area: 3 /1 / 4 / 7;
     background-color: hsl(143, 45%, 89%);
@@ -142,6 +141,7 @@ body {
     height: 460px;
     margin-left: 35px;
     margin-right: 35px;
+    border-radius: 2%;
 }
 .projectimage {
     display: flex;
@@ -151,13 +151,83 @@ body {
     background-color: hsl(143, 45%, 89%);
     row-gap: 30px;
 }
+
 .projectimage a {
     background-color: transparent;
 }
-button {
-    margin-top: 30px;
-    margin-bottom: 30px;
+
+div {
+    background-color: transparent;
 }
+
+.project-div {
+    position: relative; 
+
+}
+
+.info {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 8%;
+    width: 84%;
+    height: 98.5%;
+    border-radius: 2%;
+    background-color: hsla(183, 100%, 30%, 0.9);
+    letter-spacing: 0.7px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    margin-bottom: 18px;
+    transition: all 2s ease-in-out;
+}
+
+.info h3, .info p {
+    background-color: hsla(183, 100%, 30%, 0.65);
+    width: fit-content;
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius: 10%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.info h3 {
+    font-size: 28px;
+    line-height: 30px;
+}
+
+.projectButton {
+    background-color: white;
+    color: hsl(183, 100%, 30%);
+    border: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+    bottom: 0px;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: .80rem;
+    text-align: center;
+    text-shadow: .5px .5px .5px #000;
+    border-radius: 10px;
+    box-shadow: 
+        inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+        inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.projectButton:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+.projectButton:active {
+    box-shadow: 
+        inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+        inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
 .styled {
     border: 0;
     line-height: 2.5;
@@ -172,6 +242,9 @@ button {
     box-shadow:
       inset 2px 2px 3px rgba(255, 255, 255, 0.6),
       inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   
   .styled:hover {
@@ -240,15 +313,12 @@ button {
 }
 
 /* RESPONSIVENESS */
+
 @media screen and (max-width: 407px) {
     .skillssection i {
-        font-size: xx-large;
-    }
-    .homesection i {
-        font-size: x-large;
+        padding: 7px;
     }
 }
-
 
 @media screen and (max-width: 915px){
     .aboutmesection {
@@ -277,7 +347,10 @@ button {
     .homesection i {
         font-size: xxxx-large;
     }
+    
+    
 }
+
 @media screen and (max-width: 1065px){
     .aboutmecontent{
         flex-direction: column;
@@ -291,4 +364,10 @@ button {
     .skillssection i {
         font-size: xxx-large;
     }
+}
+@media screen and (min-width: 915px) {
+    .info p {
+        margin-bottom: 130px;
+    }
+    
 }
