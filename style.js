@@ -1,7 +1,7 @@
 
 let image1 = document.getElementById('gitbash');
 let image2 = document.getElementById('wordle');
-let image3 = document.getElementById('wine-festival');
+let image3 = document.getElementById('portfolio');
 let button1 = document.getElementById('button1');
 let project = document.getElementsByClassName('project-div');
 let info = document.getElementsByClassName('info');
