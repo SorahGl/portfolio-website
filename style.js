@@ -2,6 +2,7 @@
 let image1 = document.getElementById('gitbash');
 let image2 = document.getElementById('wordle');
 let image3 = document.getElementById('portfolio');
+let image4 = document.getElementById('hangman');
 let button1 = document.getElementById('button1');
 let project = document.getElementsByClassName('project-div');
 let info = document.getElementsByClassName('info');
@@ -11,6 +12,7 @@ function seeMore() {
     image1.hidden === false? image1.hidden = true : image1.hidden = false;
     image2.hidden === false? image2.hidden = true : image2.hidden = false;
     image3.hidden === false? image3.hidden = true : image3.hidden = false;
+    image4.hidden === false? image4.hidden = true : image4.hidden = false;
 }
 
 function buttonEvents(button1) {
