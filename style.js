@@ -1,8 +1,8 @@
 
 let image1 = document.getElementById('gitbash');
-let image2 = document.getElementById('wordle');
-let image3 = document.getElementById('portfolio');
-let image4 = document.getElementById('hangman');
+let image2 = document.getElementById('portfolio');
+let image3 = document.getElementById('form-a-story');
+let image4 = document.getElementById('web-design');
 let button1 = document.getElementById('button1');
 let project = document.getElementsByClassName('project-div');
 let info = document.getElementsByClassName('info');
