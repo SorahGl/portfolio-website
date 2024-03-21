@@ -3,6 +3,7 @@ let image1 = document.getElementById('gitbash');
 let image2 = document.getElementById('portfolio');
 let image3 = document.getElementById('form-a-story');
 let image4 = document.getElementById('web-design');
+let image5 = document.getElementById('calc');
 let button1 = document.getElementById('button1');
 let project = document.getElementsByClassName('project-div');
 let info = document.getElementsByClassName('info');
@@ -13,6 +14,7 @@ function seeMore() {
     image2.hidden === false? image2.hidden = true : image2.hidden = false;
     image3.hidden === false? image3.hidden = true : image3.hidden = false;
     image4.hidden === false? image4.hidden = true : image4.hidden = false;
+    image5.hidden === false? image5.hidden = true : image5.hidden = false;
 }
 
 function buttonEvents(button1) {
